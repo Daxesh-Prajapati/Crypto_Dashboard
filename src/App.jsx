@@ -1,15 +1,13 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import CoinDetail from './pages/CoinDetail';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import CoinList from "./pages/CoinList";
 
-export default function App() {
+function App() {
   return (
-    <div className="container py-4">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/coin/:id" element={<CoinDetail />} />
-      </Routes>
-    </div>
+    <Routes>
+      <Route path="/" element={<CoinList />} />
+    </Routes>
   );
 }
+
+export default App;
